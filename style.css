@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'vazir';
+    src: url(fonts/Vazir.woff2) format(woff2);
+    font-family: 'vazir-digit';
+    src: url(fonts/Vazir-Medium-FD.woff2) format(woff2);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'vazir' ;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-top: 5rem;
+}
+
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg{
+    width: 2rem;
+}
+
+.location{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+
+.main-contentContainer{
+    background: #0010264D;
+    width: 60%;
+    padding: 2rem;
+    border-radius: 2rem;
+    height: fit-content;
+}
+
+.main-contentTable table{
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.contentHeader{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+}
+
+.main-situationIcon{
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0010264D;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+
+.main-situationIcon img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.main-contentTable img{
+    width: 40px;
+}
+
+.main-situationIcon_content{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 740px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .main-contentContainer{
+        width: fit-content;
+    }
+    .container{
+        height: max-content;
+        margin-bottom: 2rem;
+    }
+    .main-contentTable table{
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+
+}
