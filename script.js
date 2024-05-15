@@ -18,8 +18,6 @@ fetch('https://api.dastyar.io/express/weather?lat=35.67194277&lng=51.42434403')
         <p style = "font-family: 'vazir-digit'">${data[0].max}° حداکثر</p>
     </div>`
 
-    document.body.style.background = `${data[0].backgroundColor}`;
-    // document.body.style.color = `${data[0].textColor}`;
 })
 /////////////Date Convert///////////
 const today = Date.now();
